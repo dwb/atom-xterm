@@ -302,7 +302,7 @@ export default {
     this.disposables.add(
       atom.workspace.observeActivePaneItem(item => {
         if (item instanceof TermView) {
-          item.focus();
+          item.focusTerm();
         }
       }),
     );
